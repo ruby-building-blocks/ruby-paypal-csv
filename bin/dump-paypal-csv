@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'paypal/csv'
+
+f = Paypal::CSV.new(ARGV[0])
+p f
