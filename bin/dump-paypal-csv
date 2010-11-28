@@ -2,5 +2,13 @@
 
 require 'paypal/csv'
 
-f = Paypal::CSV.new(ARGV[0])
-p f
+Paypal::CSV.new(ARGV[0]).each do |r|
+	p r
+end
+
+def transaction_for(row)
+	
+end
+
+def print_transaction(t)
+end
